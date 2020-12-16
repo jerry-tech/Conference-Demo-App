@@ -20,7 +20,7 @@ public class PersistenceConfiguration {
     @Bean
     public DataSource dataSource(){
         DataSourceBuilder builder = DataSourceBuilder.create();
-        builder.url("jdbc:mysql://localhost:3306/boot conferencing");
+        builder.url("jdbc:postgresql://localhost:5432/conferencing");
         
         System.out.println("My Custom DataSource has been initialized");
         return builder.build();
